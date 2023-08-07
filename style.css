@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header {
+    height: 75px;
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.top {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+    background: #F1E4E6;
+    display: flex;
+}
+
+.top__left {
+    width: 50%;
+}
+
+.top__right {
+    width: 50%;
+    padding-left: 64px;
+    box-sizing: border-box;
+}
+
+.top__content {
+    margin-top: 40%;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.top__heading {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.top__heading__mini {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.spanned__text {
+    color: #F16D7F;
+}
+
+.sale {
+    padding-top: 64px;
+}
+
+.sale__content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.sale__item {
+    position: relative;
+}
+
+.sale__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sale__p {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color:#FFFFFF
+}
+
+.sale__heading {
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+}
+
+.featured__box {
+    margin-bottom: 110px;
+}
+
+.featured-items__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px 0 48px 0;
+}
+
+.featured__heading {
+    color: #222;
+    font-size: 30px;
+    line-height: normal;
+}
+
+.featured__heading--small {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.featured-items__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.featured-item__container {
+    background: #F8F8F8;
+}
+
+.featured-item__info {
+    padding: 25px 20px 20px 18px;
+}
+
+.featured-item__name {
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.featured-item__description {
+    color: #5D5D5D;
+    padding-top: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.featured-item__price {
+    color: #F16D7F;
+    padding-top: 18px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.browse-button {
+    text-align: center;
+    padding-top: 48px;
+}
+
+.browse-button__span {
+    border: solid #FF6A6A;
+    padding: 15px 40px;
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.advantages__container {
+    background: #222224;
+    display: flex;
+
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 104px 0;
+
+}
+
+.advantage__title {
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.advantage__desc {
+    color: #FBFBFB;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 360px;
+}
+
+.subscribe__container {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("img/photo_subscribe.jpeg");
+    background-color: #cccccc;
+    height: 448px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial img {
+    margin-top: 97px;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    max-width: 360px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.testimonial span {
+    font-style: italic;
+}
+
+.subscribe-form {
+    max-width: 557px;
+}
+
+.subscribe-form__title {
+    margin-top: 150px;
+    margin-bottom: 32px;
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167.2%;
+}
+
+.subscribe-form__title #subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 167.2%;
+}
+
+.email-input {
+    border-radius: 50px 0 0 50px;
+    background: #E1E1E1;
+    border: none;
+    height: 50px;
+    width: 256px;
+    padding: 0 64px 0 22px;
+    box-sizing: border-box;
+    opacity: 0.67;
+}
+
+.form__button {
+    color: #FFF;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background: #F16D7F;
+    border-radius: 0 50px 50px 0;
+    padding: 8px;
+    margin-left: -4px;
+}
+
+.footer {
+    height: 80px;
+    background: #222224;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 230px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-right: 230px;
+}
+
+.social__icon {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__icon img {
+    width: 50%;
+}
+
+#fb {
+    width: 35%;
+}
+
