@@ -81,6 +81,72 @@ img {
     color: #F16D7F;
 }
 
+.menu-icon {
+    position: relative;
+}
+
+.dropdown__container {
+    width: 232px;
+    background: #FFF;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 51px;
+    left: 0;
+    filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+    padding-bottom: 24px;
+}
+
+.header__right > div, svg {
+    cursor: pointer;
+}
+
+.menu-icon:hover .dropdown__container{
+    display: block;
+}
+
+.text-ml-34 {
+    margin-left: 34px;
+}
+
+.menu__title {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 37px 143px 4px 0;
+}
+
+.menu__block {
+    margin-top: 20px;
+    margin-left: 34px;
+}
+
+.menu__block li {
+    list-style-type: none;
+}
+
+.menu__section > .title {
+    color: #F16D7F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu__section > .group > li {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 0 0 20px;
+}
+
+.menu__section > .group > li > a {
+    color: #6F6E6E;
+}
+
 .sale {
     padding-top: 64px;
 }
@@ -122,71 +188,114 @@ img {
     text-align: center;
 }
 
-.featured__box {
-    margin-bottom: 110px;
+.tac {
+    text-align: center;
 }
 
-.featured-items__heading {
+.heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.text-mt-6 {
+    margin-top: 6px;
+}
+
+.product-box {
+    padding-top: 96px;
+    padding-bottom: 124px;
+}
+
+.product-content {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.product {
+    width: 360px;
+    background: #F8F8F8;
+    position: relative;
+}
+
+.product:hover .product__add {
+    display: flex;
+}
+
+.product:hover .product__img {
+    filter: brightness(50%);
+}
+
+.product__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: 24px 16px;
+    gap: 16px;
+}
+
+.product__add {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    width: 139px;
+    height: 44px;
+    display: none;
     align-items: center;
-    padding: 96px 0 48px 0;
+    justify-content: center;
+    gap: 11px;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    top: 188px;
+    left: 111px;
 }
 
-.featured__heading {
-    color: #222;
-    font-size: 30px;
-    line-height: normal;
-}
-
-.featured__heading--small {
-    color: #9F9F9F;
-    font-size: 14px;
+.product__heading {
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.featured-items__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-.featured-item__container {
-    background: #F8F8F8;
-}
-
-.featured-item__info {
-    padding: 25px 20px 20px 18px;
-}
-
-.featured-item__name {
-    color: #000;
+    font-weight: normal;
     font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    line-height: 16px;
+    color: #000000;
 }
 
-.featured-item__description {
-    color: #5D5D5D;
-    padding-top: 12px;
-    font-size: 14px;
+.product__add:hover {
+    color: #222222;
+    background-color: #FFFFFF;
+}
+
+.product__add:hover path {
+    fill: #222222;
+}
+.product__text {
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
 }
 
-.featured-item__price {
-    color: #F16D7F;
-    padding-top: 18px;
-    font-size: 16px;
+.product__price {
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
 }
 
 .browse-button {
@@ -202,6 +311,11 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.browse-button__span:hover {
+    background-color: #F16D7F;
+    color: #FFF;
 }
 
 .advantages__container {
@@ -352,11 +466,20 @@ img {
     align-items: center;
 }
 
-.social__icon img {
-    width: 50%;
+.social__icon #instagram path {
+    fill: #000000;
 }
 
-#fb {
-    width: 35%;
+.social__icon:hover {
+    background: #F16D7F;
 }
+
+.social__icon:hover path {
+    fill: #FFFFFF;
+}
+
+.social__icon img {
+    width: 60%;
+}
+
 
