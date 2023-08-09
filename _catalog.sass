@@ -37,46 +37,101 @@
         &:hover
             color: $colorSite
 
-.filter
+.filter-sort
+    padding-top: 36px
+    padding-bottom: 64px
     display: flex
-    margin-top: 55px
+    gap: $gapGrid
 
-    &__left
-        margin-left: 20px
-        display: flex
-        justify-content: space-between
-        align-items: center
-        cursor: pointer
-        &:hover p
+.filter
+    width: $contentCol4
+    position: relative
+
+    &__details
+        padding: 12px 16px
+        position: absolute
+        width: 100%
+        z-index: 1
+        box-sizing: border-box
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        &[open] .filter__summary
             color: $colorSite
-        &:hover &__icon path
-                fill: #EF5B70
+        &[open] .filter__summary path
+            fill: $colorSite
 
-        &__text
-            padding-right: 11px
-            color: #000
-            font-size: 14px
-            font-weight: 600
-
-    &__right
-        margin-left: 306px
-
-        &__group
-            display: flex
-            align-items: center
-            padding-right: 28px
-            color: #6F6E6E
-            font-size: 14px
-            font-style: normal
-            font-weight: 400
-            line-height: normal
-
-        &__group svg
-            padding-left: 8px
-
-    &__right ul
+    &__summary
         display: flex
-        list-style-type: none
+        align-items: center
+        gap: 11px
+
+    &__details-in
+        padding-top: 16px
+        &[open] .filter__category
+            color: $colorSite
+
+    &__category
+        border-left: 5px solid $colorSite
+        padding-top: 11px
+        &_border-bottom
+            border-bottom: 1px solid #EBEBEB
+            padding-bottom: 11px
+            padding-left: 11px
+
+    &__box-link
+        display: flex
+        flex-direction: column
+        gap: 11px
+        padding: 24px 16px
+
+    &__link
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSite
+
+//.filter
+//    display: flex
+//    margin-top: 55px
+//
+//    &__left
+//        margin-left: 20px
+//        display: flex
+//        justify-content: space-between
+//        align-items: center
+//        cursor: pointer
+//        &:hover p
+//            color: $colorSite
+//        &:hover &__icon path
+//                fill: #EF5B70
+//
+//        &__text
+//            padding-right: 11px
+//            color: #000
+//            font-size: 14px
+//            font-weight: 600
+//
+//    &__right
+//        margin-left: 306px
+//
+//        &__group
+//            display: flex
+//            align-items: center
+//            padding-right: 28px
+//            color: #6F6E6E
+//            font-size: 14px
+//            font-style: normal
+//            font-weight: 400
+//            line-height: normal
+//
+//        &__group svg
+//            padding-left: 8px
+//
+//    &__right ul
+//        display: flex
+//        list-style-type: none
 
 .catalog__p-t-0
     padding-top: 0
