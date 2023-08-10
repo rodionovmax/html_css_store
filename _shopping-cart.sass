@@ -1,0 +1,152 @@
+.shopping-cart-box
+    display: flex
+
+.shopping-cart-column
+    display: flex
+
+    &--left
+        max-width: 652px
+        padding-top: 60px
+        padding-bottom: 80px
+
+    &--right
+        padding-top: 60px
+        margin-left: 128px
+
+.shopping-cart-item
+    display: flex
+    position: relative
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    margin-bottom: 40px
+    transition: transform .3s
+    &:hover
+        transform: scale(1.05)
+
+    &__info
+        padding: 24px 96px 0 24px
+        color: #575757
+        font-size: 22px
+        font-weight: 400
+
+    &__close-btn
+        position: absolute
+        right: 24px
+        top: 28px
+
+    &__title
+        color: #222
+        font-size: 24px
+        padding-bottom: 40px
+
+    &__price
+        &--span
+            color: $colorSite
+
+    &__quantity
+        display: flex
+        align-items: center
+        &__value
+            color: #656565
+            font-size: 18px
+            font-weight: 400
+            padding: 2px 16px
+            border: solid 1px $colorGray
+            margin-left: 24px
+
+.p-t-6
+    padding-top: 6px
+
+.shopping-cart-buttons-box
+    display: flex
+    justify-content: space-between
+    margin-top: 72px
+
+.shopping-cart-buttons
+    border: solid 1px #A4A4A4
+    color: #000
+    font-size: 14px
+    font-weight: 300
+    padding: 16px 40px
+    transition: transform .3s
+    &:hover
+        transform: scale(1.05)
+        cursor: pointer
+        background: #A4A4A4
+        color: #FFFFFF
+
+.shipping-form
+    display: flex
+    flex-direction: column
+
+    &__title
+        color: #222
+
+    &__input
+        width: $widthShippingForm
+        height: 45px
+        margin-top: 24px
+        color: #222
+        font-size: 13px
+        font-weight: 300
+        padding-left: 16px
+        border: 1px solid #A4A4A4
+
+    &__button
+        color: #4A4A4A
+        font-size: 11px
+        font-weight: 300
+        width: 100px
+        height: 35px
+        background: #FFFFFF
+        border: 1px solid #A4A4A4
+        margin-top: 24px
+        transition: transform .3s
+        &:hover
+            transform: scale(1.05)
+            cursor: pointer
+            background: #A4A4A4
+            color: #FFFFFF
+
+.subtotal-box
+    margin-top: 56px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    background: #F5F3F3
+    padding: 40px 36px 24px 36px
+    &__divider
+        align-self: center
+        width: 100%
+        color: #E2E2E2
+        margin: 20px 0
+
+.subtotal
+    display: flex
+    color: #4A4A4A
+    font-size: 11px
+    font-weight: 400
+    &__value
+        padding-left: 20px
+
+.grand-total
+    display: flex
+    color: #222
+    font-size: 16px
+    font-weight: 300
+    padding-top: 12px
+    &__value
+        color: $colorSite
+        padding-left: 20px
+
+.shopping-cart-checkout-btn
+    color: #FFF
+    font-size: 16px
+    font-weight: 300
+    background: $colorSite
+    padding: 16px 40px
+    align-self: center
+    transition: transform .3s
+    &:hover
+        transform: scale(1.05)
+        cursor: pointer
+
