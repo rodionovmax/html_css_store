@@ -1,0 +1,91 @@
+.slideshow
+    background: $colorLightBg
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__chevron
+        background: rgba(42, 42, 42, 0.15)
+        padding: 8px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__chevron:hover
+        cursor: pointer
+        path
+            fill: $colorSite
+
+.blank-box
+    height: 64px
+    background: $colorLightBg
+
+.about-product
+    max-width: $widthSite
+    border: solid 1px $colorGray
+    margin-top: -64px
+    background: #FFFFFF
+    margin-left: calc(50% - #{$widthSite / 2})
+    margin-right: calc(50% - #{$widthSite / 2})
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__collection
+        color: $colorSite
+        font-size: 14px
+        font-weight: 300
+        margin-top: 64px
+
+    &__product
+        color: #4D4D4D
+        font-size: 18px
+        font-weight: 300
+        padding-bottom: 48px
+
+    &__description
+        max-width: 555px
+        text-align: center
+        color: #5E5E5E
+        font-size: 14px
+        font-weight: 300
+
+    &__price
+        color: #EF5B70
+        font-size: 24px
+        font-weight: 300
+        padding-top: 32px
+
+.add-to-cart
+    border: solid #FF6A6A
+    padding: 15px 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 64px
+
+    &__text
+        color: #F26376
+        font-size: 16px
+        font-weight: 400
+        padding-left: 16px
+
+    &:hover
+        background-color: $colorSite
+        & path
+            fill: #FFFFFF
+
+    &:hover &__text
+        color: #FFFFFF
+
+.divider--red
+    padding: 12px 0
+
+.divider--gray
+    padding: 64px 0
+
+.padding-top
+    padding-top: 0
+
+.m-t-36
+    margin-top: 36px

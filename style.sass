@@ -1,0 +1,463 @@
+@import vars
+@import mixins
+
+*
+    margin: 0
+    padding: 0
+
+summary
+    display: block
+
+    &::-webkit-details-marker
+        display: none
+
+body
+    font-family: 'Lato', sans-serif
+
+a
+    text-decoration: none
+
+img
+    max-width: 100%
+
+.center
+    padding-left: calc(50% - #{$widthSite / 2})
+    padding-right: calc(50% - #{$widthSite / 2})
+
+.header
+    height: 75px
+    background: $colorDark
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__left
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 40px
+
+    &__right
+        @extend .header__left
+        gap: 32px
+
+.top
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+    background: #F1E4E6
+    display: flex
+
+    &__left
+        width: 50%
+
+    &__right
+        @extend .top__left
+        padding-left: 64px
+        box-sizing: border-box
+
+    &__content
+        margin-top: 40%
+        border-left: 12px solid #F16D7F
+        padding-left: 16px
+
+    &__heading
+        font-size: 48px
+        font-style: normal
+        font-weight: 900
+        line-height: normal
+
+    &__heading__mini
+        font-size: 32px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+
+.spanned__text
+    color: $colorSite
+
+.menu-icon
+    position: relative
+
+.dropdown__container
+    width: 232px
+    background: #FFF
+    display: none
+    position: absolute
+    z-index: 999
+    top: 51px
+    left: 0
+    filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21))
+    padding-bottom: 24px
+
+.header__right > div, svg
+    cursor: pointer
+
+.menu-icon:hover .dropdown__container
+    display: block
+
+.text-ml-34
+    margin-left: 34px
+
+.menu__title
+    color: #000
+    font-size: 14px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    padding: 37px 143px 4px 0
+
+
+.menu__block
+    margin-top: 20px
+    margin-left: 34px
+
+.menu__block li
+    list-style-type: none
+
+.menu__section > .title
+    color: $colorSite
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+.menu__section > .group > li
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    padding: 12px 0 0 20px
+
+.menu__section > .group > li > a
+    color: #6F6E6E
+
+.sale
+    padding-top: 64px
+
+    &__content
+        display: flex
+        gap: 30px
+        margin-bottom: 30px
+
+    &__item
+        position: relative
+        &:hover .sale__heading
+            color: darken($colorSite, 20%)
+
+    &__img
+        width: ($widthSite - 2 * $gapGrid) / 3
+        &__big
+            width: $widthSite
+
+    &__text
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+    &__p
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &__heading
+        color: $colorSite
+        font-size: 24px
+        font-weight: bold
+        line-height: 29px
+        text-align: center
+
+.tac
+    text-align: center
+
+.heading
+    font-style: normal
+    font-weight: normal
+    font-size: 30px
+    line-height: 36px
+    color: $colorDark
+
+.text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+
+.text-mt-6
+    margin-top: 6px
+
+.product-box
+    padding-top: 96px
+    padding-bottom: 124px
+
+.product-content
+    margin-top: 48px
+    display: flex
+    flex-wrap: wrap
+    gap: 30px
+    justify-content: center
+
+.product
+    width: ($widthSite - 2 * $gapGrid) / 3
+    background: #F8F8F8
+    position: relative
+
+    &__info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        padding: 24px 16px
+        gap: 16px
+
+    &__img
+        width: 100%
+
+    &__add
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        width: 139px
+        height: 44px
+        display: none
+        align-items: center
+        justify-content: center
+        gap: 11px
+        border: 1px solid #FFFFFF
+        position: absolute
+        top: 188px
+        left: 111px
+
+    &__heading
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &__add:hover
+        color: $colorDark
+        background-color: #FFFFFF
+
+    &__add:hover path
+        fill: $colorDark
+
+    &__text
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+
+    &__price
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: $colorSite
+
+.product:hover .product__add
+    display: flex
+
+.product:hover .product__img
+    filter: brightness(50%)
+
+.browse-button
+    text-align: center
+    padding-top: 48px
+
+    &__span
+        border: solid #FF6A6A
+        padding: 15px 40px
+        color: #F26376
+        font-size: 16px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+
+    &__span:hover
+        background-color: $colorSite
+        color: #FFF
+
+.advantages__container
+    background: #222224
+    display: flex
+
+.advantages__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 104px 0
+
+.advantage__title
+    color: #FBFBFB
+    text-align: center
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    margin-top: 28px
+    margin-bottom: 16px
+
+.advantage__desc
+    color: #FBFBFB
+    text-align: center
+    font-size: 14px
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+    max-width: 360px
+
+.subscribe__container
+    display: flex
+    justify-content: space-around
+    background-image: url("img/photo_subscribe.jpeg")
+    background-color: #cccccc
+    height: 448px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+.testimonial img
+    margin-top: 97px
+    margin-bottom: 30px
+
+.testimonial
+    max-width: 360px
+    font-size: 20px
+    font-weight: 400
+    line-height: normal
+    text-align: center
+
+.testimonial span
+    font-style: italic
+
+.subscribe-form
+    max-width: 557px
+
+.subscribe-form__title
+    margin-top: 150px
+    margin-bottom: 32px
+    color: #222224
+    text-align: center
+    font-size: 24px
+    font-style: normal
+    font-weight: 700
+    line-height: 167.2%
+
+.subscribe-form__title #subtitle
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 167.2%
+
+.email-input
+    border-radius: 50px 0 0 50px
+    background: #E1E1E1
+    border: none
+    height: 50px
+    width: 256px
+    padding: 0 64px 0 22px
+    box-sizing: border-box
+    opacity: 0.67
+
+.form__button
+    color: #FFF
+    height: 50px
+    width: 100px
+    text-align: center
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    border: none
+    background: $colorSite
+    border-radius: 0 50px 50px 0
+    padding: 8px
+    margin-left: -4px
+
+.footer
+    height: 80px
+    background: #222224
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.copyright
+    color: #FBFBFB
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    margin-left: 230px
+
+.social
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 8px
+    margin-right: 230px
+
+    &__icon
+        width: 32px
+        height: 32px
+        background: #FFFFFF
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__icon:hover
+        background: $colorSite
+
+    &__icon:hover path
+        fill: #FFFFFF
+
+    &__icon img
+        width: 60%
+
+.sort
+    display: flex
+    gap: 28px
+    padding-top: 12px
+
+    &__details
+        position: relative
+
+    &__summary
+        display: flex
+        align-items: center
+        gap: 10px
+
+    &__box
+        position: absolute
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        width: 79px
+        box-sizing: border-box
+        padding: 8px
+        display: flex
+        flex-direction: column
+        gap: 6px
+        margin-top: 5px
+        z-index: 1
+
+    &__item
+        display: flex
+        gap: 9px
+        align-items: center
+
+
+
+@import catalog
+@import product

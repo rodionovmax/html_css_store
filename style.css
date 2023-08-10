@@ -459,9 +459,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-.social__icon #instagram path {
-  fill: #000000;
-}
 .social__icon:hover {
   background: #F16D7F;
 }
@@ -639,6 +636,108 @@ img {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.slideshow {
+  background: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slideshow__chevron {
+  background: rgba(42, 42, 42, 0.15);
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow__chevron:hover {
+  cursor: pointer;
+}
+.slideshow__chevron:hover path {
+  fill: #F16D7F;
+}
+
+.blank-box {
+  height: 64px;
+  background: #F7F7F7;
+}
+
+.about-product {
+  max-width: 1140px;
+  border: solid 1px #EAEAEA;
+  margin-top: -64px;
+  background: #FFFFFF;
+  margin-left: calc(50% - 570px);
+  margin-right: calc(50% - 570px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-product__collection {
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 64px;
+}
+.about-product__product {
+  color: #4D4D4D;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 48px;
+}
+.about-product__description {
+  max-width: 555px;
+  text-align: center;
+  color: #5E5E5E;
+  font-size: 14px;
+  font-weight: 300;
+}
+.about-product__price {
+  color: #EF5B70;
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 32px;
+}
+
+.add-to-cart {
+  border: solid #FF6A6A;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.add-to-cart__text {
+  color: #F26376;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 16px;
+}
+.add-to-cart:hover {
+  background-color: #F16D7F;
+}
+.add-to-cart:hover path {
+  fill: #FFFFFF;
+}
+.add-to-cart:hover .add-to-cart__text {
+  color: #FFFFFF;
+}
+
+.divider--red {
+  padding: 12px 0;
+}
+
+.divider--gray {
+  padding: 64px 0;
+}
+
+.padding-top {
+  padding-top: 0;
+}
+
+.m-t-36 {
+  margin-top: 36px;
 }
 
 /*# sourceMappingURL=style.css.map */
