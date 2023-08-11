@@ -910,4 +910,37 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 1023px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .product-content {
+    gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 363px;
+  }
+  .top__left, .top__right {
+    display: none;
+  }
+  .top__right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top__content {
+    margin-top: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
