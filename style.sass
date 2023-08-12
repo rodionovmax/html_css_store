@@ -41,6 +41,62 @@ img
         @extend .header__left
         gap: 32px
 
+.wrapper
+    position: relative
+    overflow: hidden
+
+.menu
+    position: absolute
+    top: 75px
+    right: 0
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 32px
+    width: 232px
+    box-sizing: border-box
+    transition: all 0.5s
+    z-index: 100
+    &__ul
+        list-style-type: none
+    &__heading
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        margin-bottom: 4px
+    &__link-heading
+        font-size: 14px
+        line-height: 17px
+        color: $colorSite
+        text-transform: uppercase
+    &__li
+        margin-top: 20px
+    &__content-links
+        display: flex
+        flex-direction: column
+        margin-left: 22px
+        gap: 11px
+        margin-top: 12px
+    &__link
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSite
+    &__close
+        position: absolute
+        top: 16px
+        right: 16px
+    &__box
+        display: none
+
+#switcher
+    position: absolute
+    visibility: hidden
+    left: -999999px
+
+    &:checked ~ .menu
+        right: -100%
+
 .top
     padding-left: calc(50% - 800px)
     padding-right: calc(50% - 800px)
@@ -75,8 +131,8 @@ img
 .spanned__text
     color: $colorSite
 
-.menu-icon
-    position: relative
+//.menu-icon
+//    position: relative
 
 .dropdown__container
     width: 232px
@@ -98,38 +154,38 @@ img
 .text-ml-34
     margin-left: 34px
 
-.menu__title
-    color: #000
-    font-size: 14px
-    font-style: normal
-    font-weight: 700
-    line-height: normal
-    padding: 37px 143px 4px 0
-
-
-.menu__block
-    margin-top: 20px
-    margin-left: 34px
-
-.menu__block li
-    list-style-type: none
-
-.menu__section > .title
-    color: $colorSite
-    font-size: 14px
-    font-style: normal
-    font-weight: 400
-    line-height: normal
-
-.menu__section > .group > li
-    font-size: 14px
-    font-style: normal
-    font-weight: 400
-    line-height: normal
-    padding: 12px 0 0 20px
-
-.menu__section > .group > li > a
-    color: #6F6E6E
+//.menu__title
+//    color: #000
+//    font-size: 14px
+//    font-style: normal
+//    font-weight: 700
+//    line-height: normal
+//    padding: 37px 143px 4px 0
+//
+//
+//.menu__block
+//    margin-top: 20px
+//    margin-left: 34px
+//
+//.menu__block li
+//    list-style-type: none
+//
+//.menu__section > .title
+//    color: $colorSite
+//    font-size: 14px
+//    font-style: normal
+//    font-weight: 400
+//    line-height: normal
+//
+//.menu__section > .group > li
+//    font-size: 14px
+//    font-style: normal
+//    font-weight: 400
+//    line-height: normal
+//    padding: 12px 0 0 20px
+//
+//.menu__section > .group > li > a
+//    color: #6F6E6E
 
 .sale
     padding-top: 64px
@@ -195,7 +251,7 @@ img
 
 .product-box
     padding-top: 96px
-    padding-bottom: 124px
+    padding-bottom: 96px
 
 .product-content
     margin-top: 48px
