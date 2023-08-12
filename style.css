@@ -968,7 +968,8 @@ img {
   box-sizing: border-box;
 }
 .registration__column--right {
-  margin-left: 100px;
+  padding-left: 128px;
+  box-sizing: border-box;
 }
 .registration__title {
   color: #222;
@@ -978,7 +979,6 @@ img {
 .registration__block {
   display: flex;
   flex-direction: column;
-  width: 360px;
 }
 .registration__block--bottom {
   padding-top: 24px;
@@ -1092,6 +1092,13 @@ img {
   }
   .about-product__description {
     padding: 0 106px;
+  }
+  .registration__column--right {
+    max-width: 354px;
+    padding-left: 22px;
+  }
+  .registration__perks {
+    font-size: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -1221,6 +1228,19 @@ img {
   }
   .product-box {
     padding-top: 28px;
+  }
+  .registration {
+    flex-direction: column;
+  }
+  .registration__column--left {
+    padding-bottom: 40px;
+  }
+  .registration__column--right {
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  .registration__perks__subtitle {
+    padding-top: 32px;
   }
 }
 
